@@ -17,8 +17,8 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi officiis quae consectetur eum ab corrupti, cum vel velit sit neque, omnis soluta expedita assumenda fugiat? Doloremque facilis quae omnis officiis.</p>
 
     <script>
-        var n1 = parseInt(window.prompt('Digite um número: ')) // string
-        var n2 = parseInt(window.prompt('Digite outro número: ')) // string
+        var n1 = Number(window.prompt('Digite um número: ')) // string
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')) // string
         var s = n1 + n2  
         /* 
         + tem o efeito de concatenar (juntar) e adição
@@ -26,9 +26,7 @@
         (string + string) para concatenação
         */
 
-        window.alert('A soma dos dois números são: ' + s)
-
-
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
     </script>
 </body>
 </html>
