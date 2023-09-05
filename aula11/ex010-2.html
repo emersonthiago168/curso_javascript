@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Moro em: <input type="text" name="lugar" id="lugar">
+    <input type="button" id="botao" value="Enviar">
+    <div id="res"></div>
+
+    <script>
+        var enviar = document.getElementById('botao')
+        enviar.addEventListener('click', clicar)
+
+        function clicar() {
+            var lugar = document.querySelector('input#lugar')
+            var res = document.getElementById('res')
+            var pais = lugar.value
+
+            if (pais == 'Brasil') {
+                window.alert(`Você vive em ${pais}.`)
+                window.confirm(`Sendo assim você é Brasileiro!`)
+            } else {
+                window.alert(`Você vive em ${pais}.`)
+                window.confirm(`Sendo assim você é estrangeiro!`)
+            }
+        }
+    </script>
+</body>
+</html>
