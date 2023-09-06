@@ -20,7 +20,17 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
 }
 
+div {
+    text-align: center;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
 footer {
     text-align: center;
     font-style: italic;
 }
+
