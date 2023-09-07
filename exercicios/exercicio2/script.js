@@ -13,6 +13,7 @@ function verificar () {
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
         img.style.borderRadius = '50%'
+        img.style.margin = 'auto'
 
         if (fsex[0].checked) {
             genero = 'Homem'
