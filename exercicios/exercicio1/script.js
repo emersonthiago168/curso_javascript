@@ -1,3 +1,5 @@
+alert('Nesse exercício foram utilizadas condições para determinar o estilo do site de acordo com a hora do sistema.')
+
 function carregar () {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
