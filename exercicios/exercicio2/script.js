@@ -1,4 +1,4 @@
-alert('Olá')
+alert('Nesse exercício foram utilizadas condições aninhadas para determinar a idade de acordo com o ano e a imagem de acordo com o sexo')
 
 function verificar () {
     var data = new Date()
