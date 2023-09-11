@@ -1,3 +1,4 @@
+alert('Nesse exercício foi utilizado repetição com teste lógico no inicio para gerar uma tabuada')
 function tabuada() {
     let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')

@@ -1,3 +1,4 @@
+alert('Nesse exercício foram utilizadas condições aninhadas e repetições com variáveis de controle para contar os números de acordo com os dados apresentados')
 function contar() {
     var ini = document.getElementById('txti')
     var fim = document.getElementById('txtf')
