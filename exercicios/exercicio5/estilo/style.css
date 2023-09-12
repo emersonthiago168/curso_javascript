@@ -20,6 +20,11 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
 }
 
+select#flista {
+    width: 150px;
+    margin: 10px 0;
+}
+
 footer {
     text-align: center;
     font-style: italic;
