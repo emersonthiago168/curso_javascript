@@ -6,5 +6,4 @@ function parimpar(n) {
     }
 }
 
-let res = parimpar(7)
-console.log(res) 
+console.log(parimpar(12))
