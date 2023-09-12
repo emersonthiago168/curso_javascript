@@ -3,6 +3,12 @@ valores.sort()
 
 console.log(valores)
 
-for (e=0; e < valores.length; e++) {
-    console.log(`A posição ${e} tem o valor ${valores[e]}`)
+/*
+    for (pos=0; e < valores.length; e++) {
+        console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+    }
+*/
+
+for (let pos in valores) {
+    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
