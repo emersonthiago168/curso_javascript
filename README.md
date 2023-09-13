@@ -7,3 +7,4 @@ Curso de JavaScript
 <a href="https://emersonthiago168.github.io/javascript/exercicios/exercicio2/" target="_blank">Exercício 2 - Verificador de Idade</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/exercicios/exercicio3/" target="_blank">Exercício 3 - Contagem</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/exercicios/exercicio4/" target="_blank">Exercício 4 - Tabuada</a>
+<a href="https://emersonthiago168.github.io/javascript/exercicios/exercicio5/" target="_blank">Exercício 5 - Analisador de Números</a>
