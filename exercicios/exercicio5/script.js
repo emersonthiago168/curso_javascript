@@ -1,3 +1,4 @@
+alert('Nesse exercício foi utilizado vetor para armazenamento de valores, condições, repetições com variáveis de controle e funções com chamadas, parâmetros e retorno.')
 let num = document.getElementById('fnum')
 let lista = document.getElementById('flista')
 let res = document.getElementById('res')
