@@ -1,4 +1,4 @@
-# javascript
+# JavaScript
 Curso de JavaScript
 
 <h2>Exercícios realizados ao longo do curso do CursoemVideo</h2>
