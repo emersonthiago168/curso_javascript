@@ -8,3 +8,6 @@ Curso de JavaScript
 <a href="https://emersonthiago168.github.io/javascript/curso%20do%20cursoemvideo/exercicios/exercicio3/" target="_blank">Exercício 3 - Contagem</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/curso%20do%20cursoemvideo/exercicios/exercicio4/" target="_blank">Exercício 4 - Tabuada</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/curso%20do%20cursoemvideo/exercicios/exercicio5/" target="_blank">Exercício 5 - Analisador de Números</a>
+
+<h2>Exercícios realizados ao longo do curso da Udemy</h2>
+<p>Acesse aqui:</p>
