@@ -1,3 +1,4 @@
+// Escopo Global
 function retornaFuncao() {
     const nome = 'Luiz';
     return function () {
@@ -6,4 +7,4 @@ function retornaFuncao() {
 };
 
 const funcao = retornaFuncao();
-console.dir(funcao());
+console.dir(funcao);
