@@ -7,5 +7,5 @@ function falaFrase(comeco) {
 }
 
 const olaMundo = falaFrase('Olá');
-
+console.log(olaMundo('mundo!'))
 
