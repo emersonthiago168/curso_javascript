@@ -8,4 +8,4 @@ function conta(operador, acumulador, ...numeros) {
 
     console.log(acumulador)
 }
-conta('+', 0, 20, 30, 40, 50);
+conta('+', 1, 20, 30, 40, 50);
