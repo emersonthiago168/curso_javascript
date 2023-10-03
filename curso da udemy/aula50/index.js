@@ -1,4 +1,5 @@
-function funcao() {
-    console.log(arguments[0])
+// argumentos que sustenta todos os argumentos enviados (com a palavra function)
+function funcao(a, b = 2, c = 4) {
+    console.log(a + b + c)
 }
-funcao('Valor', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+funcao(2, undefined, 20);
