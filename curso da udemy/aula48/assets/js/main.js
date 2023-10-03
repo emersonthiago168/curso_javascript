@@ -74,5 +74,4 @@ function adicionaTarefasSalvas() {
     }
 }
 
-
 adicionaTarefasSalvas();
