@@ -25,7 +25,7 @@ function criaBotaoApagar(li) {
     botaoApagar.innerText = 'Apagar';
     botaoApagar.setAttribute('class', 'apagar');
     botaoApagar.setAttribute('title', 'Apagar esta tarefa');
-    li.appendChild(botaoApagar)
+    li.appendChild(botaoApagar);
 }
 
 function criaTarefa (textoInput) {
@@ -57,7 +57,6 @@ function salvarTarefas() {
 
     for (let tarefa of liTarefas) {
         let tarefaTexto = tarefa.innerText;
-        tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
         listaDeTarefas.push(tarefaTexto);
     }
 
@@ -73,5 +72,6 @@ function adicionaTarefasSalvas() {
         criaTarefa(tarefa);
     }
 }
+
 
 adicionaTarefasSalvas();
