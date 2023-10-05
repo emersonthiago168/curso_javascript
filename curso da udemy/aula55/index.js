@@ -1,5 +1,6 @@
 // IIFE -> Immediately invoked function expression
 
 (function() {
-    const nome 
+    const nome = 'Emerson';
+    
 })();
