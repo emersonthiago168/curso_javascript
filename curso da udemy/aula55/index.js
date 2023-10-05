@@ -2,5 +2,5 @@
 
 (function() {
     const nome = 'Emerson';
-    
+    console.log(nome)
 })();
