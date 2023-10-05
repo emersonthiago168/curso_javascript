@@ -1,8 +1,15 @@
-function criaPessoa(nome, sobrenome) {
+function criaPessoa(nome, sobrenome, altura, peso) {
     return {
-        nome, sobrenome
+        nome,
+        sobrenome,
+        fala(assunto) {
+            return `${nome} está ${assunto}`
+        },
+        altura,
+        peso
     };
 }
 
 const p1 = criaPessoa ('Emerson', 'Thiago');
-console.log(p1.sobrenome)
+
+
