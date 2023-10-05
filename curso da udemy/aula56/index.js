@@ -1,15 +1,24 @@
 // Factory function (função fábrica)
+// Constructor function (função construtura)
 function criaPessoa(nome, sobrenome, a, p) {
     return {
         nome,
         sobrenome,
 
-        nomeCompleto() {
-            return `${nome} ${sobrenome}`
+        // Getter
+        get nomeCompleto() {
+            return `${this.nome} ${this.sobrenome}`;
         },
 
-        fala(assunto) {
-            return `${nome} está ${assunto}`
+        //Setter
+        set nomeCompleto(valor) {
+            valor = valor.split(' ');
+            this.nome = valor.shift();
+            this.sobrenome = valor.join(' ');
+        },
+
+        fala(assunto = 'NADA.') {
+            return `${this.nome} está falando sobre ${assunto}`;
         },
 
         altura: a,
@@ -24,5 +33,5 @@ function criaPessoa(nome, sobrenome, a, p) {
 }
 
 const p1 = criaPessoa('Emerson', 'Thiago', 1.80, 80);
-console.log(p1.nomeCompleto());
-
+p1.nomeCompleto = 'Eduardo Ribeiro';
+console.log(p1.nomeCompleto);
