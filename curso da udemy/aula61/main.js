@@ -16,4 +16,21 @@ function* geradora2() {
     }
 }
 
-function 
+function* geradora3() {
+    yield 0;
+    yield 1;
+    yield 2;
+}
+
+function* geradora4() {
+    yield* geradora3();
+    yield 4;
+    yield 5;
+}
+
+const g4 = geradora4();
+
+
+function* geradora5() {
+    
+}
