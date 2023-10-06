@@ -8,6 +8,6 @@ function* geradora1() {
 }
 
 const g1 = geradora1();
-console.log(g1.next())
-console.log(g1.next())
-console.log(g1.next())
+for (let valor of g1) {
+    console.log(valor);
+}
