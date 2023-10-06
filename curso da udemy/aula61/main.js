@@ -28,9 +28,16 @@ function* geradora4() {
     yield 5;
 }
 
-const g4 = geradora4();
-
-
 function* geradora5() {
-    
+    yield function() {
+        console.log('Vim do y1');
+    };
+
+    // ...
+
+    yield function () {
+        console.log('Vim do y2');
+    };
 }
+
+const g5 = geradora5();
