@@ -15,4 +15,5 @@ Curso de JavaScript
 <a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula47/index.html" target="_blank">Exercício 2 - Timer</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula48/index.html" target="_blank">Exercício 3 - Lista de Tarefas</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula57/index.html" target="_blank">Exercício 4 - Calculadora</a> <br>
+<a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula57/index.html" target="_blank">Exercício 5 - Calculadora com constructor functions</a> <br>
 
