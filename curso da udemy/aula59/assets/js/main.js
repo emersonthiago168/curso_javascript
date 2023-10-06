@@ -26,30 +26,30 @@
                 if (e.key === 'Enter') this.realizaConta();
             })
         }
-
+        
         this.addDisplay = valor => this.display.value += valor;
         this.clearDisplay = () => this.display.value = '';
         this.delOne = () => this.display.value = this.display.value.slice(0, -1);
         this.realizaConta = () => {
             let conta = this.display.value;
-
+    
             try {
-
+    
                 this.conta = eval(conta);
-
+    
                 if (!conta) {
                     alert('Digite um valor válido');
                     return;
                 }
-
+    
                 this.display.value = this.conta;
             } catch {
                 alert('Digite um valor válido')
-                return;
+                return
             }
         }
     }
-
+    
     const calculadora = new Calculadora();
     calculadora.inicia();
 })();
