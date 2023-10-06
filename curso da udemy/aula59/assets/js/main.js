@@ -26,7 +26,7 @@
                 if (e.key === 'Enter') this.realizaConta();
             })
         }
-        
+
         this.addDisplay = valor => this.display.value += valor;
         this.clearDisplay = () => this.display.value = '';
         this.delOne = () => this.display.value = this.display.value.slice(0, -1);
@@ -45,7 +45,7 @@
                 this.display.value = this.conta;
             } catch {
                 alert('Digite um valor válido')
-                return
+                return;
             }
         }
     }
