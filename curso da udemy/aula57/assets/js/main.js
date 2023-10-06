@@ -64,10 +64,9 @@ function criaCalculadora() {
         pressionaEnter() {
             document.addEventListener('keypress', e => {
                 e.preventDefault();
-                
+
                 if(e.key === 'Enter') {
                     this.realizaConta();
-                    
                 }
             })
         }
