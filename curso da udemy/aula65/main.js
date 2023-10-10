@@ -26,6 +26,6 @@ const pessoas = [
 
 const pessoasComNomeGrande = pessoas.filter(obj => obj.nome.length >= 5);
 const pessoasComMaisDe50 = pessoas.filter(obj => obj.idade > 50);
-const pessoasTerminaComA = pessoas.filter(obj => obj.nome.toLowerCase().endsWith('a'))
+const pessoasTerminaComA = pessoas.filter(obj => obj.nome.toLowerCase().endsWith('a'));
 console.log(pessoasTerminaComA);
 
