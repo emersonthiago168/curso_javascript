@@ -21,5 +21,11 @@ const pessoas = [
     { nome: 'Wallace', idade: 47}
 ];
 
-const nomePessoa = pessoas.map(valor => valor.nome)
-console.log(nomePessoa);
+const nomePessoa = pessoas.map(obj => obj.nome);
+const idades = pessoas.map(obj => ({idade: obj.idade}));
+const comIds = pessoas.map((obj, indice) => {
+    const newObj = {...obj};
+    newObj.id = (indice + 1) * 1235;
+    return newObj;
+});
+console.log(comIds);
