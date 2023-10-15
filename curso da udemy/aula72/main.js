@@ -13,8 +13,7 @@ function Produto(nome, preco, estoque) {
         },
         set: function(valor) {
             if (typeof valor !== 'number') {
-                console.log('Não é um número');
-                return;
+                throw new TypeError('Não é um número')
             }
 
             estoquePrivado = valor;
@@ -23,5 +22,23 @@ function Produto(nome, preco, estoque) {
 }
 
 const p1 = new Produto('Camiseta', 20, 3);
-p1.estoque = 550000;
+p1.estoque = 600;
 console.log(p1.estoque)
+
+
+
+function criaProduto(nome) {
+    return {
+        get nome() {
+            return nome;
+        },
+
+        set nome(valor) {
+            nome = valor
+        }
+    };
+}
+
+const produto2 = criaProduto('Emerson');
+produto2.nome = 'Rebeca';
+console.log(produto2.nome)
