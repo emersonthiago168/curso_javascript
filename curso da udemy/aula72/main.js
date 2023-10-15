@@ -6,9 +6,8 @@ function Produto(nome, preco, estoque) {
 
     Object.defineProperty(this, 'estoque', {
         enumerable: true, // mostra a chave
-        value: estoque, // valor
-        writable: true, // pode alterar ou não
         configurable: true, // configurável ou não
+        
     })
 }
 
