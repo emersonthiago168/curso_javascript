@@ -3,9 +3,11 @@
 function Pessoa(nome, sobrenome) {
     this.nome = nome;
     this.sobrenome = sobrenome;
+
+    Object.freeze(this);
 };
 
 const p1 = new Pessoa('Emerson', 'Thiago');
-Object.freeze(p1);
 p1.nome = 'Outra coisa';
+delete p1.nome;
 console.log(p1);
