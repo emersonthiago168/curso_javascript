@@ -34,11 +34,12 @@ function criaProduto(nome) {
         },
 
         set nome(valor) {
-            nome = valor
+            valor = valor.replace('coisa', '');
+            nome = valor;
         }
     };
 }
 
-const produto2 = criaProduto('Emerson');
-produto2.nome = 'Rebeca';
+const produto2 = criaProduto('Calça');
+produto2.nome = 'Qualquer coisa';
 console.log(produto2.nome)
