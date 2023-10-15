@@ -8,7 +8,7 @@ function Produto(nome, preco, estoque) {
         configurable: true, // configurável ou não
     });
 
-    Objet.defineProperties(this, {
+    Object.defineProperties(this, {
         nome: {
             enumerable: true,
             value: nome,
@@ -25,7 +25,7 @@ function Produto(nome, preco, estoque) {
 }
 
 const p1 = new Produto('Camiseta', 20, 3);
-console.log(Object.keys(p1));
+console.log(p1);
 
 for (let key in p1) {
     console.log(key);
