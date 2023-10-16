@@ -12,13 +12,13 @@ Object.defineProperties(define várias propriedades)
 Object.defineProperty(define uma propriedade)
 */
 
-const produto = {nome: 'Caneca', preco: 1.8};
-const outraCoisa = {
+const produto = {nome: 'Produto', preco: 1.8};
+const caneca = {
     ...produto,
-
+    material: 'porcelana'
 };
 
-outraCoisa.nome = 'Outro nome';
-outraCoisa.preco = 2.5;
+caneca.nome = 'Outro nome';
+caneca.preco = 2.5;
 console.log(produto);
-console.log(outraCoisa);
+console.log(caneca);
