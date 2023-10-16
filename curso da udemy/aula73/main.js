@@ -12,10 +12,8 @@ Object.defineProperties(define várias propriedades)
 Object.defineProperty(define uma propriedade)
 */
 
-const produto = {nome: 'Produto', preco: 1.8};
-Object.defineProperty(produto, 'nome', {
-    writable: false,
-    configurable: false,
-    value: 'Qualquer outra coisa'
-});
-console.log(Object.getOwnPropertyDescriptor(produto, 'nome'));
+const produto = {nome: 'Produto', preco: 1.8, material: 'porcelana'};
+
+for (let entry of Object.entries(produto)) {
+    console.log(entry);
+};
