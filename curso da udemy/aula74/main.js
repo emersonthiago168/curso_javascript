@@ -1,12 +1,12 @@
 // Construtora => molde (classe)
 function Pessoa(nome, sobrenome) {
     this.nome = nome;
-    this.sobernome = sobrenome;
-    this.nomeCompleto = () => `ORIGINAL: ${this.nome} ${this.sobrenome}`;
+    this.sobrenome = sobrenome;
+    // this.nomeCompleto = () => `ORIGINAL: ${this.nome} ${this.sobrenome}`;
 }
 
 Pessoa.prototype.nomeCompleto = function () {
-    return `${this.nome} ${this.sobrenome}`; 
+    return ` proto ${this.nome} ${this.sobrenome}`; 
 }
 
 // instância
