@@ -13,7 +13,7 @@ function Produto(nome, preco, estoque) {
         },
         set: function(valor) {
             if (typeof valor !== 'number') {
-                throw new TypeError('Não é um número')
+                throw new TypeError('Não é um número');
             }
 
             estoquePrivado = valor;
