@@ -16,8 +16,7 @@ function Camiseta(nome, preco, cor) {
     Produto.call(this, nome, preco);
 }
 Camiseta.prototype = Object.create(Produto.prototype);
+Camiseta.prototype.constructor = Camiseta;
 
 const camiseta = new Camiseta('Regata', 7.5, 'Preta');
-
-
 console.log(camiseta);
