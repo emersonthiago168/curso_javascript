@@ -45,6 +45,7 @@ const produto = new Produto('Genérico', 111);
 const camiseta = new Camiseta('Regata', 7.5, 'Preta');
 const caneca = new Caneca('Xícara', 13, 'Plástico', 5);
 
+console.log(caneca.estoque);
 console.log(caneca);
 console.log(camiseta);
 console.log(produto);
