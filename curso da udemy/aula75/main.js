@@ -22,5 +22,7 @@ Object.setPrototypeOf(p2, Produto.prototype);
 
 p2.aumento(10)
 
-console.log(p1);
-console.log(p2);
+const p3 = Object.create(Produto.prototype);
+p3.preco = 113;
+console.log(p3);
+
