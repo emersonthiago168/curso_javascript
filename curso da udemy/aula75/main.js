@@ -18,7 +18,9 @@ const p2 = {
     nome: 'Caneca',
     preco: 15
 };
+Object.setPrototypeOf(p2, Produto.prototype);
 
+p2.aumento(10)
 
-
+console.log(p1);
 console.log(p2);
