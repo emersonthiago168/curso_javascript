@@ -15,5 +15,9 @@ Produto.prototype.desconto = function (quantia) {
 function Camiseta(nome, preco, cor) {
     Produto.call(this, nome, preco);
 }
+Camiseta.prototype = Object.create(Produto.prototype);
 
 const camiseta = new Camiseta('Regata', 7.5, 'Preta');
+
+
+console.log(camiseta);
