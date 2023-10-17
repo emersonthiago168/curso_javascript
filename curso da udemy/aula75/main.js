@@ -1,4 +1,5 @@
-const objA = {
-    chaveA: 'A',
-    // __proto__: Object.prototype
+function Produto(nome, preco) {
+    this.nome = nome;
+    this.preco = preco;
 };
+
