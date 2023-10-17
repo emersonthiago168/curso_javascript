@@ -6,7 +6,7 @@ function Pessoa(nome, sobrenome) {
 }
 
 Pessoa.prototype.nomeCompleto = function () {
-    return ` proto ${this.nome} ${this.sobrenome}`; 
+    return `proto ${this.nome} ${this.sobrenome}`; 
 }
 
 // instância
