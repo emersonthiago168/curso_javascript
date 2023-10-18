@@ -24,5 +24,10 @@ function ValidaCPF(cpfEnviado) {
     });
 }
 
+ValidaCPF.prototype.valida = function() {
+    
+};
+
 const cpf = new ValidaCPF('705.484.450-52');
-console.log(cpf)
+console.log(cpf);
+cpf.valida()
