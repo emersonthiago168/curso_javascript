@@ -5,23 +5,38 @@ function Conta(agencia, conta, saldo) {
     this.saldo = saldo;
 }
 
-Conta.prototype.sacar = function(valor) {
+Conta.prototype.sacar = function (valor) {
     if (this.saldo < valor) {
         console.log(`Saldo insuficiente: R$${this.saldo}`)
         return;
     }
-    
+
     this.saldo -= valor;
     this.verSaldo();
 };
-Conta.prototype.depositar = function(valor) {
+
+Conta.prototype.depositar = function (valor) {
     this.saldo += valor;
     this.verSaldo();
 };
-Conta.prototype.verSaldo = function() {
+
+Conta.prototype.verSaldo = function () {
     console.log(`Ag/c: ${this.agencia}/ ${this.conta} | SALDO: R$${this.saldo}`);
 };
 
 function ContaCorrente(agencia, conta, saldo, limite) {
-    Object.call(this);
+    Object.call(this, agencia, conta, saldo);
+    this.limite = limite;
+};
+
+ContaCorrente.prototype = Object.create(Conta.prototype);
+ContaCorrente.prototype.constructor = ContaCorrente;
+ContaCorrente.prototype.sacar = function (valor) {
+    if (this.saldo < valor) {
+        console.log(`Saldo insuficiente: R$${this.saldo}`)
+        return;
+    }
+
+    this.saldo -= valor;
+    this.verSaldo();
 };
