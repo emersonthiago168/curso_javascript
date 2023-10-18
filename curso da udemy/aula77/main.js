@@ -38,7 +38,7 @@ ValidaCPF.prototype.criaDigito = function(cpfParcial) {
     const cpfArray = Array.from(cpfParcial);
     let regressivo = cpfArray.length + 1;
     const digito = cpfArray.reduce((ac, val) => {
-        console.log(regressivo);
+        ac += (regressivo * Number(val));
         regressivo--;
         return ac;
     }, 0);
