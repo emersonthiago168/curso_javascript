@@ -25,7 +25,7 @@ Conta.prototype.verSaldo = function () {
 };
 
 function ContaCorrente(agencia, conta, saldo, limite) {
-    Object.call(this, agencia, conta, saldo);
+    Conta.call(this, agencia, conta, saldo);
     this.limite = limite;
 };
 
