@@ -6,7 +6,7 @@ function Conta(agencia, conta, saldo) {
 }
 
 Conta.prototype.sacar = function (valor) {
-    if (this.saldo < valor) {
+    if (valor > this.saldo) {
         console.log(`Saldo insuficiente: R$${this.saldo}`)
         return;
     }
@@ -32,7 +32,7 @@ function ContaCorrente(agencia, conta, saldo, limite) {
 ContaCorrente.prototype = Object.create(Conta.prototype);
 ContaCorrente.prototype.constructor = ContaCorrente;
 ContaCorrente.prototype.sacar = function (valor) {
-    if (this.saldo < valor) {
+    if (valor > (this.saldo + this.limite)) {
         console.log(`Saldo insuficiente: R$${this.saldo}`)
         return;
     }
@@ -40,3 +40,6 @@ ContaCorrente.prototype.sacar = function (valor) {
     this.saldo -= valor;
     this.verSaldo();
 };
+
+const cc = new ContaCorrente(465, 45689, 0, 100);
+console.log(cc);
