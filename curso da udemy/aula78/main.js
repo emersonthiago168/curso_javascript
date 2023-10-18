@@ -42,4 +42,6 @@ ContaCorrente.prototype.sacar = function (valor) {
 };
 
 const cc = new ContaCorrente(465, 45689, 0, 100);
-console.log(cc);
+cc.depositar(10);
+cc.sacar(110);
+cc.sacar(1);
