@@ -41,9 +41,8 @@ ContaCorrente.prototype.sacar = function (valor) {
     this.verSaldo();
 };
 
-function ContaPoupanca(agencia, conta, saldo, limite) {
+function ContaPoupanca(agencia, conta, saldo) {
     Conta.call(this, agencia, conta, saldo)
-    this.limite = limite;
 };
 
 ContaPoupanca.prototype = Object.create(Conta.prototype);
@@ -53,5 +52,12 @@ const cc = new ContaCorrente(465, 51985, 0, 100);
 cc.depositar(10);
 cc.sacar(110);
 cc.sacar(1);
+
+console.log();
+
+const cp = new ContaPoupanca(12, 33, 0);
+cp.depositar(10);
+cp.sacar(110);
+cp.sacar(1);
 
 
