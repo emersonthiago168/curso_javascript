@@ -14,3 +14,15 @@ Se o número digito for maior que 9, consideramos 0.
 11 - (284 % 11) = 2 (Segundo digito) 
 Se o número digito for maior que 9, consideramos 0.
 */
+
+function ValidaCPF(cpfEnviado) {
+    Object.defineProperty(this, 'cpfLimpo', {
+        enumerable: true,
+        get: function() {
+            return cpfEnviado.replace(/\D+/g, '');
+        }
+    });
+}
+
+const cpf = new ValidaCPF('705.484.450-52');
+console.log(cpf)
