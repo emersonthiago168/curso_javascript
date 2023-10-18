@@ -33,9 +33,8 @@ ValidaCPF.prototype.valida = function() {
     const digito2 = this.criaDigito(cpfParcial + digito1);
 
     const novoCpf = cpfParcial + digito1 + digito2
-    console.log(novoCpf)
     
-    return true;
+    return novoCpf === this.cpfLimpo;
 };
 
 ValidaCPF.prototype.criaDigito = function(cpfParcial) {
@@ -52,5 +51,4 @@ ValidaCPF.prototype.criaDigito = function(cpfParcial) {
 }
 
 const cpf = new ValidaCPF('705.484.450-52');
-console.log(cpf);
 console.log(cpf.valida())
