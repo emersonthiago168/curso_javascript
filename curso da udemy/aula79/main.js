@@ -16,12 +16,15 @@ const beber = {
     },
 };
 
+const pessoaPrototype = { ...falar, ...comer, ...beber };
+// const pessoaPrototype = Object.assign({}, falar, comer, beber); - Ou desse jeito
+
 function criaPessoa(nome, sobrenome) {
     return Object.create(pessoaPrototype, {
         nome: { value: nome },
         sobrenome: { value: sobrenome }
     });
-}
+};
 
 const p1 = criaPessoa('Emerson', 'Thiago');
 const p2 = criaPessoa('Luiz', 'Otavio');
