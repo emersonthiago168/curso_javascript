@@ -1,18 +1,18 @@
 const falar = {
     falar() {
-        console.log(`${this.nome} está falando.`)
+        console.log(`${this.nome} está falando.`);
     },
 };
 
 const comer = {
     comer() {
-        console.log(`${this.nome} está comendo.`)
+        console.log(`${this.nome} está comendo.`);
     },
 };
 
 const beber = {
     beber() {
-        console.log(`${this.nome} está bebendo.`)
+        console.log(`${this.nome} está bebendo.`);
     },
 };
 
