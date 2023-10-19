@@ -16,4 +16,5 @@ Curso de JavaScript
 <a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula48/index.html" target="_blank">Exercício 3 - Lista de Tarefas</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula57/index.html" target="_blank">Exercício 4 - Calculadora</a> <br>
 <a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula57/index.html" target="_blank">Exercício 5 - Calculadora com constructor functions</a> <br>
+<a href="https://github.com/emersonthiago168/javascript/blob/main/curso%20da%20udemy/aula77/main.js" target="_blank">Exercício 6 - Validando CPF</a> <br>
 
