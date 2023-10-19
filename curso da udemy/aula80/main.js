@@ -16,9 +16,9 @@ for (const pessoa of pessoas) {
     novasPessoas.set(id, { ...pessoa });
 };
 
-for (const pessoas of novasPessoas.keys()) {
-    console.log(pessoas);
-};
+// for (const pessoas of novasPessoas.values()) {
+//     console.log(pessoas);
+// };
 
 
 
