@@ -1,7 +1,5 @@
 function criaPessoa(nome, sobrenome) {
-    return {
-        nome, 
-        sobrenome,
+    const pessoaPrototype = {
         falar() {
             console.log(`${this.nome} está falando.`)
         },
@@ -12,6 +10,11 @@ function criaPessoa(nome, sobrenome) {
             console.log(`${this.nome} está  bebendo.`)
         }
     };
+
+    return Object.create(pessoaPrototype, {
+        nome: { value: nome },
+        sobrenome: { value: sobrenome }
+    });
 }
 
 const p1 = criaPessoa('Emerson', 'Thiago');
