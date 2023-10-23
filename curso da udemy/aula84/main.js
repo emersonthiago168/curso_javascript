@@ -27,6 +27,7 @@ class ControleRemoto {
 
 const controle1 = new ControleRemoto('LG');
 ControleRemoto.soma();
+console.log(ControleRemoto);
 
 
 
