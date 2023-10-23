@@ -22,3 +22,5 @@ class DispositivoEletronico {
         this.ligado = false;
     }
 }
+
+const d1 = new DispositivoEletronico
