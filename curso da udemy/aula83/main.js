@@ -23,7 +23,24 @@ class DispositivoEletronico {
     }
 }
 
-class Smartphone extends DispositivoEletronico {}
+class Smartphone extends DispositivoEletronico {
+    constructor(nome, cor, modelo) {
+        super(nome);
+        this.cor = cor;
+        this.modelo = modelo;
+    }
+}
 
-const s1 = new Smartphone('iPhone');
+class Tablet extends DispositivoEletronico {
+    constructor(nome, temWifi) {
+        super(nome);
+        this.temWifi = temWifi;
+    }
+
+    ligar() {
+        console.log('Olha, você alterou o metódo ligar.');
+    }
+}
+
+const s1 = new Smartphone('Samsung', 'Preto', 'Galaxy S10');
 console.log(s1);
