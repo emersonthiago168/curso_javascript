@@ -1,17 +1,22 @@
+const _velocidade = Symbol('velocidade');
 class Carro {
     constructor(nome) {
         this.nome = nome;
-        this.velocidade = 0;
+        this[_velocidade] = 0;
+    }
+
+    get velocidade() {
+        return this[_velocidade];
     }
 
     acelerar() {
-        if (this.velocidade >= 100) return;
-        this.velocidade++;
+        if (this[_velocidade] >= 100) return;
+        this[_velocidade]++;
     }
 
     freio() {
-        if (this.velocidade <= 0) return;
-        this.velocidade--;
+        if (this[_velocidade] <= 0) return;
+        this[_velocidade]--;
     }
 }
 
@@ -21,4 +26,6 @@ for (let i = 0; i <= 200; i++) {
     c1.acelerar(); 
 }
 
-console.log(c1);
+
+c1.velocidade = 2000;
+console.log(c1.velocidade);
