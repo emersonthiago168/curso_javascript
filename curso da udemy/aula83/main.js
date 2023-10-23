@@ -23,4 +23,7 @@ class DispositivoEletronico {
     }
 }
 
-const d1 = new DispositivoEletronico
+class Smartphone extends DispositivoEletronico {}
+
+const s1 = new Smartphone('iPhone');
+console.log(s1);
