@@ -13,4 +13,8 @@ class ControleRemoto {
     }
 }
 
-const controle1 = new
+const controle1 = new ControleRemoto('LG');
+controle1.aumentarVolume();
+controle1.aumentarVolume();
+controle1.aumentarVolume();
+console.log(controle1);
