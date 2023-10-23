@@ -7,15 +7,13 @@ class Pessoa {
     falar() {
         console.log(`${this.nome} está falando`);
     }
-
-    comer() {
-        console.log(`${this.nome} está comendo`);
-    }
-
-    beber() {
-        console.log(`${this.nome} está bebendo`);
-    }
 }
 
 const p1 = new Pessoa('Emerson', 'Thiago');
+const p2 = new Pessoa('Maria', 'Silva');
+const p3 = new Pessoa('João', 'Ribeiro');
+const p4 = new Pessoa('Pedro', 'Henrique');
 console.log(p1);
+console.log(p2);
+console.log(p3);
+console.log(p4);
