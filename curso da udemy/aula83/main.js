@@ -46,8 +46,16 @@ class Tablet extends DispositivoEletronico {
     }
 }
 
-const s1 = new Smartphone('Samsung', 'Preto', 'Galaxy S10');
-console.log(s1);
+class TabletPequeno extends Tablet {
+    constructor(nome, preco) {
+        super(nome);
+        this.preco = preco;
+    }
+}
 
+const s1 = new Smartphone('Samsung', 'Preto', 'Galaxy S10');
 const t1 = new Tablet('iPad', true);
-console.log(t1.ligado);
+const tp = new TabletPequeno('Tablet Pequeno', 250);
+console.log(s1);
+console.log(t1);
+console.log(tp);
