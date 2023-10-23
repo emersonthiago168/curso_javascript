@@ -9,6 +9,7 @@ class Pessoa {
     }
 }
 
+// constructor function
 function Pessoa2(nome, sobrenome) {
     this.nome = nome;
     this.sobrenome = sobrenome;
