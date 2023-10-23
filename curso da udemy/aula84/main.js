@@ -1,7 +1,12 @@
+function teste() {
+    console.log('Este é meu teste'); // - this => objeto global
+}
+
 class ControleRemoto {
     constructor(tv) {
         this.tv = tv;
         this.volume = 0;
+        teste();
     }
 
     // Método de instância - referente a instância em si
@@ -16,16 +21,12 @@ class ControleRemoto {
 
     // Método estático - "Uma função que está dentro da classe"
     static soma(x, y) {
-        return x + y;
+        console.log(this); // this => classe
     }
 }
 
 const controle1 = new ControleRemoto('LG');
-controle1.aumentarVolume();
-controle1.aumentarVolume();
-controle1.aumentarVolume();
-controle1.aumentarVolume();
-console.log(controle1);
+ControleRemoto.soma();
 
-console.log(ControleRemoto.soma(2, 4));
+
 
