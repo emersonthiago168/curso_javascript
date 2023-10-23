@@ -40,7 +40,14 @@ class Tablet extends DispositivoEletronico {
     ligar() {
         console.log('Olha, você alterou o metódo ligar.');
     }
+
+    falaOi() {
+        console.log('Oi');
+    }
 }
 
 const s1 = new Smartphone('Samsung', 'Preto', 'Galaxy S10');
 console.log(s1);
+
+const t1 = new Tablet('iPad', true);
+console.log(t1.ligado);
