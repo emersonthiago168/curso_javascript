@@ -14,7 +14,12 @@ class ValidaCPF {
     }
 
     geraNovoCpf() {
+        const cpfSemDigitos = this.cpfLimpo.slice(0, -2);
+        const digito1 = this.geraDigito(cpfSemDigitos);
+    }
 
+    geraDigito(cpfSemDigitos) {
+        
     }
 
     valida() {
@@ -22,7 +27,7 @@ class ValidaCPF {
         if (typeof this.cpfLimpo !== 'string') return false;
         if (this.cpfLimpo.length !== 11) return false;
         if (this.isSequencia()) return false;
-        this.geraNovoCpf();
+        if (!this.geraNovoCpf()) return false;
 
         return 'CHEGUEI AQUI';
     }
