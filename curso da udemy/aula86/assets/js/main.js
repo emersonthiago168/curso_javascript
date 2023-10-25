@@ -17,6 +17,8 @@ class ValidaFormulario {
 
     camposSaoValidos() {
         let valid = true;
+
+        for (let campo of this.formulario.querySelectorAll('.validar'))
     }
 
 
