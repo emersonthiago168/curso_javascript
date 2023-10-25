@@ -21,10 +21,17 @@ class ValidaFormulario {
         for (let campo of this.formulario.querySelectorAll('.validar')) {
             if (!campo.value) {
                 this.criaErro(campo, 'Campo tal...');
+                valid = false;
             }
         }
     }
 
+    criaErro(campo, msg) {
+        const div = document.createElement('div');
+        div.innerHTML = msg;
+        div.classList.add('error-text');
+        campo.insertAdjacentElement('afterend', div);
+    }
 
 }
 
