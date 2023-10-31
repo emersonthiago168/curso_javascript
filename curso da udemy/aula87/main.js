@@ -18,8 +18,7 @@ esperaAi('Frase 1', rand(1, 3))
         return esperaAi('Frase 2', rand(1, 3));
     })
     .then(resposta => {
-        console.log(resposta);
-        return esperaAi('Frase 3', rand(1, 3));
+        return resposta + ' vai pro outro THEN';
     })
     .then(resposta => {
         console.log(resposta);
