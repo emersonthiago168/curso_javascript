@@ -27,3 +27,5 @@ esperaAi('Conexão com o BD', rand(1, 3))
     .then(() => {
         console.log('Exibe dados na tela');
     })
+
+console.log('Isso aqui será exibido antes de qualquer um promise');
