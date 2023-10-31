@@ -6,10 +6,24 @@ function rand(min, max) {
 
 function esperaAi(msg, tempo) {
     return new Promise((resolve, reject) => {
-        if(typeof msg !== 'string') reject(new Error('ERRO'));
+        if (typeof msg !== 'string') reject(new Error('ERRO'));
 
         setTimeout(() => {
-            resolve(msg);
+            resolve(msg.toUpperCase() + ' - Passei na promise');
         }, tempo);
     });
 }
+
+// Promise.all | Promise.race | Promise.resolve | Promise.reject
+
+const promises = [
+    'Primeiro valor',
+    esperaAi('Promise 1', 3000),
+    esperaAi('Promise 2', 500),
+    esperaAi('Promise 3', 1000),
+    'Outro valor'
+];
+
+Promise.all(promises)
+    .then(valor => console.log(valor))
+    .catch(erro => console.log(erro))
