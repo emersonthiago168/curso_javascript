@@ -12,14 +12,18 @@ function esperaAi(msg, tempo) {
     });
 }
 
-esperaAi('Frase 1', rand(1, 3))
+esperaAi('Conexão com o BD', rand(1, 3))
     .then(resposta => {
         console.log(resposta);
-        return esperaAi('Frase 2', rand(1, 3));
+        return esperaAi('Buscando dados da BASE', rand(1, 3));
     })
     .then(resposta => {
-        return resposta + ' vai pro outro THEN';
+        console.log(resposta)
+        return esperaAi('Tratando os dados da BASE', rand(1, 3));
     })
     .then(resposta => {
         console.log(resposta);
+    })
+    .then(() => {
+        console.log('Exibe dados na tela');
     })
