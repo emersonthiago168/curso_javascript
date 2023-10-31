@@ -6,7 +6,7 @@ function rand(min, max) {
 
 function esperaAi(msg, tempo) {
     return new Promise((resolve, reject) => {
-        if(typeof msg !== 'string') reject('BAD VALUE');
+        if(typeof msg !== 'string') reject(new Error('ERRO'));
 
         setTimeout(() => {
             resolve(msg);
@@ -30,7 +30,7 @@ esperaAi('Conexão com o BD', rand(1, 3))
         console.log('Exibe dados na tela');
     })
     .catch(e => {
-        console.log('ERRO');
+        console.log('ERRO', e);
     })
 
 console.log('Isso aqui será exibido antes de qualquer um promise');
