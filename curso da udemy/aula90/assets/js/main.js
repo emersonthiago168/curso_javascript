@@ -37,6 +37,7 @@ function carregaPagina(el) {
     })
 }
 
-carregaResultado(response) {
+function carregaResultado(response) {
     const resultado = document.querySelector('.resultado');
+    resultado.innerHTML = response;
 }
