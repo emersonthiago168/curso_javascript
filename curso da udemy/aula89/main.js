@@ -35,15 +35,19 @@ function esperaAi(msg, tempo) {
 //     .catch(e => console.log(e))
 
 async function executa() {
-    const fase1 = await esperaAi('Fase 1', rand());
-    console.log(fase1);
+    try {
+        const fase1 = await esperaAi('Fase 1', rand());
+        console.log(fase1);
 
-    const fase2 = await esperaAi('Fase 2', rand());
-    console.log(fase2);
+        const fase2 = await esperaAi(2222, rand());
+        console.log(fase2);
 
-    const fase3 = await esperaAi('Fase 3', rand());
-    console.log(fase3);
+        const fase3 = await esperaAi('Fase 3', rand());
+        console.log(fase3);
 
-    console.log('Terminamos na fase:', fase3);
+        console.log('Terminamos na fase:', fase3);
+    } catch (e) {
+        console.log(e);
+    }
 }
 executa();
