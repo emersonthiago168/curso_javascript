@@ -25,4 +25,18 @@ document.addEventListener('click', e => {
 function carregaPagina(el) {
     const href = el.getAttribute('href');
 
+    request({
+        method: 'GET',
+        url: href,
+        success(response) {
+            carregaResultado(response);
+        },
+        error(errorText) {
+            console.log(errorText);
+        }
+    })
+}
+
+carregaResultado(response) {
+    const resultado = document.querySelector('.resultado');
 }
