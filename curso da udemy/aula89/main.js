@@ -36,10 +36,14 @@ function esperaAi(msg, tempo) {
 
 async function executa() {
     try {
-        const fase1 = await esperaAi('Fase 1', rand());
+        const fase1 = esperaAi('Fase 1', 1000);
         console.log(fase1);
 
-        const fase2 = await esperaAi(2222, rand());
+        setTimeout(function () {
+            console.log('Fase 1 estava pendente, aqui está agora: ', fase1);
+        }, 1100)
+
+        const fase2 = await esperaAi('Fase 2', rand());
         console.log(fase2);
 
         const fase3 = await esperaAi('Fase 3', rand());
@@ -51,3 +55,10 @@ async function executa() {
     }
 }
 executa();
+
+/*
+    ESTADOS DA PROMISE
+    - pending - pendente
+    - fulfilled - resolvida
+    - rejected - rejeitada
+*/
