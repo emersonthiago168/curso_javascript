@@ -24,16 +24,19 @@ document.addEventListener('click', e => {
     }
 });
 
-function carregaPagina(el) {
-    const href = el.getAttribute('href');
+async function carregaPagina(el) {
+    try {
+        const href = el.getAttribute('href');
+        const response = await fetch(href);
 
-    fetch(href)
-        .then(response => {
-            if(response.status !== 200) throw new Error('ERRO 404!');
-            return response.text();
-        })
-        .then(html => carregaResultado(html))
-        .catch(e => console.error(e));
+        if (response.status !== 200) throw new Error('ERRO 404!');
+
+        const html = await response.text();
+        carregaResultado(html)
+    } catch (e) {
+        console.error(e);
+    }
+
 }
 
 function carregaResultado(response) {
