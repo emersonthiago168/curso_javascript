@@ -1,53 +1,30 @@
-// const request = obj => {
-//     return new Promise((resolve, reject) => {
-//         const xhr = new XMLHttpRequest();
-//         xhr.open(obj.method, obj.url, true);
-//         xhr.send();
+fetch('pessoas.json')
+  .then(response => response.json())
+  .then(json => carregaElementosNaPagina(json));
 
-//         xhr.addEventListener('load', () => {
-//             if (xhr.status >= 200 && xhr.status < 300) {
-//                 resolve(xhr.responseText);
-//             } else {
-//                 reject(xhr.statusText);
-//             }
-//         });
-//     })
-// };
+function carregaElementosNaPagina(json) {
+  const table = document.createElement('table');
+  const resultado = document.querySelector('.resultado')
 
-document.addEventListener('click', e => {
-    const el = e.target;
-    const tag = el.tagName.toLowerCase();
+  for (let pessoa of json) {
+    const tr = document.createElement('tr');
 
-    if (tag === 'a') {
-        e.preventDefault();
-        carregaPagina(el);
-    }
-});
+    let td = document.createElement('td');
+    td.innerHTML = pessoa.nome;
+    tr.appendChild(td);
 
-async function carregaPagina(el) {
-    try {
-        const href = el.getAttribute('href');
-        const response = await fetch(href);
+    td = document.createElement('td');
+    td.innerHTML = pessoa.idade;
+    tr.appendChild(td);
 
-        if (response.status !== 200) throw new Error('ERRO 404!');
+    td = document.createElement('td');
+    td.innerHTML = pessoa.salario;
+    tr.appendChild(td);
 
-        const html = await response.text();
-        carregaResultado(html)
-    } catch (e) {
-        console.error(e);
-    }
+    console.log(pessoa.nome);
 
+    table.appendChild(tr);
+    resultado.appendChild(table);
+
+  }
 }
-
-function carregaResultado(response) {
-    const resultado = document.querySelector('.resultado');
-    resultado.innerHTML = response;
-}
-
-fetch('pag4.html')
-    .then(resposta => {
-        if (resposta.status !== 200) throw new Error('ERRO 404 NOSSO');
-        return resposta.text();
-    })
-    .then(html => console.log(html))
-    .catch(e => console.error(e));
