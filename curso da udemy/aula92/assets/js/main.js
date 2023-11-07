@@ -1,10 +1,13 @@
-fetch('pessoas.json')
-  .then(response => response.json())
-  .then(json => carregaElementosNaPagina(json));
+// fetch('pessoas.json')
+//   .then(response => response.json())
+//   .then(json => carregaElementosNaPagina(json));
+
+axios('pessoas.json')
+  .then(response => carregaElementosNaPagina(response.data));
 
 function carregaElementosNaPagina(json) {
   const table = document.createElement('table');
-  const resultado = document.querySelector('.resultado')
+  const resultado = document.querySelector('.resultado');
 
   for (let pessoa of json) {
     const tr = document.createElement('tr');
