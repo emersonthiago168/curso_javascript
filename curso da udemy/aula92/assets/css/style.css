@@ -59,10 +59,11 @@ form button:hover {
 
 table {
   width: 100%;
+  border-collapse: collapse;
   
 }
 
 td, tr {
   border: 1px solid black;
-  padding: 5px;
+  padding: 8px;
 }

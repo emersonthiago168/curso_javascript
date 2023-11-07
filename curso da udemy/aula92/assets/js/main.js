@@ -21,10 +21,7 @@ function carregaElementosNaPagina(json) {
     td.innerHTML = pessoa.salario;
     tr.appendChild(td);
 
-    console.log(pessoa.nome);
-
     table.appendChild(tr);
     resultado.appendChild(table);
-
   }
 }
