@@ -1,1 +1,5 @@
-const path = require('path'); // CommonJS
+const path = require('path'); // CommonJS 
+
+module.exports = {
+    
+};
