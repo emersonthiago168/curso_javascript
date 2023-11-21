@@ -58,3 +58,17 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
+.container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cpf-gerado {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+}
+
