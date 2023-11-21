@@ -22,10 +22,11 @@ var chkNumeros = document.querySelector('.chk-numeros');
 var chkSimbolos = document.querySelector('.chk-simbolos');
 var gerarSenha = document.querySelector('.gerar-senha');
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
-  gerarSenha.addEventListener('click', function () {
-    console.log(chkMaisculas.checked);
-  });
+  gerarSenha.addEventListener('click', function () {});
 });
+function gera() {
+  var senha = (0,_geradores__WEBPACK_IMPORTED_MODULE_0__["default"])(qtdCaracteres.value, chkMaisculas.value, chkMinusculas.value, chkNumeros.value, chkSimbolos.value);
+}
 
 /***/ }),
 
