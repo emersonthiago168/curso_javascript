@@ -19,4 +19,5 @@ Curso de JavaScript
 <a href="https://github.com/emersonthiago168/javascript/blob/main/curso%20da%20udemy/aula77/main.js" target="_blank">Exercício 6 - Validando CPF</a> <br>
 <a href="https://github.com/emersonthiago168/javascript/blob/main/curso%20da%20udemy/aula85/main.js" target="_blank">Exercício 7 - Validando CPF (utilizando classes) </a> <br>
 <a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula86/index.html" target="_blank">Exercício 8 - Validando formulário (utilizando classes) </a> <br>
+<a href="https://emersonthiago168.github.io/javascript/curso%20da%20udemy/aula96/public/index.html" target="_blank">Exercício 9 - Gerador de CPF válido (utilizando Módulos) </a> <br>
 
