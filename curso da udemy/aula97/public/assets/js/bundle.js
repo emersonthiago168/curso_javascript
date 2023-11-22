@@ -22,10 +22,13 @@ var chkNumeros = document.querySelector('.chk-numeros');
 var chkSimbolos = document.querySelector('.chk-simbolos');
 var gerarSenha = document.querySelector('.gerar-senha');
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (function () {
-  gerarSenha.addEventListener('click', function () {});
+  gerarSenha.addEventListener('click', function () {
+    senhaGerada.innerText = gera();
+  });
 });
 function gera() {
-  var senha = (0,_geradores__WEBPACK_IMPORTED_MODULE_0__["default"])(qtdCaracteres.value, chkMaisculas.value, chkMinusculas.value, chkNumeros.value, chkSimbolos.value);
+  var senha = (0,_geradores__WEBPACK_IMPORTED_MODULE_0__["default"])(qtdCaracteres.value, chkMaisculas.checked, chkMinusculas.checked, chkNumeros.checked, chkSimbolos.checked);
+  return senha || 'Nada selecionado';
 }
 
 /***/ }),
@@ -56,11 +59,11 @@ var simbolos = ',.;^~[]{}!@#$%&_-+=*?';
 var geraSimbolo = function geraSimbolo() {
   return simbolos[rand(0, simbolos.length)];
 };
-function geraSenha(qtd, maisculas, minusculas, numeros, simbolos) {
+function geraSenha(qtd, maiusculas, minusculas, numeros, simbolos) {
   var senhaArray = [];
   qtd = Number(qtd);
   for (var i = 0; i < qtd; i++) {
-    maisculas && senhaArray.push(geraMaiscula());
+    maiusculas && senhaArray.push(geraMaiscula());
     minusculas && senhaArray.push(geraMinuscula());
     numeros && senhaArray.push(geraNumero());
     simbolos && senhaArray.push(geraSimbolo());

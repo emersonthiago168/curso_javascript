@@ -5,12 +5,12 @@ const geraNumero = () => String.fromCharCode(rand(48, 58));
 const simbolos = ',.;^~[]{}!@#$%&_-+=*?';
 const geraSimbolo = () => simbolos[rand(0, simbolos.length)];
 
-export default function geraSenha(qtd, maisculas, minusculas, numeros, simbolos) {
+export default function geraSenha(qtd, maiusculas, minusculas, numeros, simbolos) {
     const senhaArray = [];
     qtd = Number(qtd);
 
     for(let i = 0; i < qtd; i++) {
-        maisculas && senhaArray.push(geraMaiscula());
+        maiusculas && senhaArray.push(geraMaiscula());
         minusculas && senhaArray.push(geraMinuscula());
         numeros && senhaArray.push(geraNumero());
         simbolos && senhaArray.push(geraSimbolo());

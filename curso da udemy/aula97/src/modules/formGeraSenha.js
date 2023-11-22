@@ -10,16 +10,18 @@ const gerarSenha = document.querySelector('.gerar-senha');
 
 export default () => {
     gerarSenha.addEventListener('click', () => {
-
+        senhaGerada.innerText = gera();
     })
 };
 
 function gera() {
     const senha = geraSenha(
         qtdCaracteres.value,
-        chkMaisculas.value,
-        chkMinusculas.value,
-        chkNumeros.value,
-        chkSimbolos.value
+        chkMaisculas.checked,
+        chkMinusculas.checked,
+        chkNumeros.checked,
+        chkSimbolos.checked
     );
+
+    return senha || 'Nada selecionado';
 }
