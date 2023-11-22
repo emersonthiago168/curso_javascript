@@ -1,3 +1,3 @@
-function p {
+function promise() {
     
 }
