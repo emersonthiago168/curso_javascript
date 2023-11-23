@@ -1,4 +1,4 @@
-const Cachorro = require('./mod');
+const Cachorro = require('./z/mod2');
 
-const cachorro = new Cachorro('Spike');
-console.log(cachorro.latir());
+const c1 = new Cachorro('Spike');
+console.log(c1.latir());
