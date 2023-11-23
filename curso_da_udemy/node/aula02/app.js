@@ -1,4 +1,4 @@
-const aaaa = require('./mod');
+const Cachorro = require('./mod');
 
-const cachorro = new aaaa('Spike');
-console.log(cachorro.latir())
+const cachorro = new Cachorro('Spike');
+console.log(cachorro.latir());
