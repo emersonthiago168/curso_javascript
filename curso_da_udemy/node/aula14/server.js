@@ -3,10 +3,9 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const connectionString = 'mongodb+srv://emersonthiago168:Emerson5125@cluster0.eatufk7.mongodb.net/BASEDEDADOS?retryWrites=true&w=majority';
-mongoose.connect(connectionString)
+
+mongoose.connect(process.env.CONNECTIONSTRING)
     .then(() => {
-        console.log('Conectei à base de dados');
         app.emit('pronto');
     })
     .catch(e => console.log(e));
