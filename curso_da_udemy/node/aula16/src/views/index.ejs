@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<%- include('includes/head'); %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
-    <script src="assets/js/bundle.js" defer></script>
-</head>
+<section class="container">
+    <h1>
+        <% if(typeof titulo !=='undefined' ) { %>
+            <%= titulo %>
+                <% } else { %>
+                    O título não foi enviado.
+                    <% } %>
+    </h1>
+    <form action="/" method="post">
+        <label>Cliente</label>
+        <input type="text" name="cliente">
+        <button>Submit</button>
+    </form>
+</section>
 
-<body>
-    <section class="container">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <form action="/" method="post">
-            <label>Cliente</label>
-            <input type="text" name="cliente">
-            <button>Submit</button>
-        </form>
-    </section>
-</body>
-</html>
+<%- include('includes/footer'); %>
